@@ -1,0 +1,157 @@
+/* Reset default styles and set box-sizing globally */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+  }
+  
+  /* Header section */
+  header {
+    background-color: #000000; /* black color on navb */
+    color: #fff;
+    padding: 1em;
+  }
+  
+  /* Navbar container */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  /* Logo inside the navbar */
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Navbar links container */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+  }
+  
+  /* Links inside the navbar */
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+  
+  /* hover effect still */
+  .nav-links a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    color: #ffcc00;
+  }
+  
+  /* Mobile burger icon */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  /* Bars inside burger icon */
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+  }
+  
+  /* Section structure */
+  section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Headings styling */
+  h1, h2, h3 {
+    color: #003366;
+    margin-bottom: 0.5em;
+  }
+  
+  /* List indentation */
+  ul {
+    margin-left: 1.5em;
+  }
+  
+  /* Contact form layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Input and text area styling */
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  /* Submit button */
+  button {
+    background-color: #002952c0;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for button */
+  button:hover {
+    background-color: #0055a5;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #031424;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive layout for mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background-color: #003366;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
