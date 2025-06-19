@@ -154,4 +154,37 @@
       display: flex;
     }
   }
+  /* ===== IMAGE SLIDER STYLING ===== */
+
+/* Container for slider */
+.slider {
+    width: 90%;
+    max-width: 800px;
+    margin: 2em auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Slider images */
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: none; /* Hidden by default; JS controls which is shown */
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Optional: Add animation or fading effect if needed */
+  .slider img.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
   
