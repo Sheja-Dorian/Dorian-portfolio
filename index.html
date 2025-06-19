@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dorian Bitega's Resume</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    /* Sticky navbar that stays visible on scroll */
+    #navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Hover effect on the navb */
+    .nav-links a:hover {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+      color: #ffcc00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Site Header and Navb -->
+  <header>
+    <nav id="navbar">
+      <div class="logo">Dorian Bitega</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Me Section-->
+  <section class="slider">
+    <img src="img1.jpg" alt="Project 1" />
+    <img src="img2.jpg" alt="Project 2" />
+    <img src="img3.jpg" alt="Project 3" />
+  </section>
+  
+  <section id="about">
+    <h1>Hi, I'm Dorian Bitenga</h1>
+    <p>
+        <p>
+            I'm a passionate and ever-curious budding software developer who thrives on solving problems and bringing ideas to life through code. My journey into the world of computer science started with a spark that moment when I realized I could actually build something from scratch that people could interact with, benefit from, and enjoy. Since then, I've been hooked.
+            </p>
+            
+            <p>
+            Whether I'm debugging a tricky issue late into the night or designing clean, intuitive user interfaces, I'm in my element when I'm deep in the creative and logical dance that is programming. For me, it's not just about writing code it's about creating real value, making things that genuinely help people or make their lives a little more enjoyable.
+            </p>
+            
+            <p>
+            I love learning new tools and technologies, experimenting with different frameworks, and diving into documentation just to understand how something ticks. That hunger to understand why and how is what drives me every day. I'm not afraid of failure in fact, I welcome it, because every challenge is a lesson in disguise.
+            </p>
+            
+            <p>
+            At my core, I'm someone who's not just passionate about technology, but about people too. The most rewarding part of development for me is seeing how something I've built can make someone's day smoother, simpler, or just a bit more fun. That's what keeps me going the endless possibilities of creation, and the impact that even a few lines of code can make in the real world.
+            </p>
+            
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js</li>
+      <li>IT Support & Troubleshooting</li>
+      <li>Multilingual: English, French, Kinyarwanda</li>
+    </ul>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <article>
+      <h3>Call Center Agent - CCI Rwanda</h3>
+      <p>2023 - Present</p>
+      <p>I help users solve technical problems, improve their digital experience, and always keep a cool head under pressure.</p>
+    </article>
+    <article>
+      <h3>Junior Software Engineer</h3>
+      <p>2022</p>
+      <p>Worked on real-world projects, learned agile workflows, and collaborated with dev teams to deliver functional apps.</p>
+    </article>
+  </section>
+
+  <!-- Projects Section with links to GitHub -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="#" target="_blank"><strong>Weather App:</strong></a> A dynamic app using HTML/CSS/JS + API.</li>
+      <li><a href="#" target="_blank"><strong>Portfolio Website:</strong></a> Built to showcase my journey and growth.</li>
+      <li><a href="#" target="_blank"><strong>Data Encryption Tool:</strong></a> A basic tool for secure file encryption using Python.</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>Cambridge Degree in IT</p>
+    <p>High School - IT Track</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dorian Bitega. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
